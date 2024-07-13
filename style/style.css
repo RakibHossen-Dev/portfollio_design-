@@ -80,6 +80,7 @@ nav ul li a {
 }
 .banner-profile-pic {
   width: 580px;
+  border-radius: 50%;
 }
 .banner {
   display: flex;
@@ -169,4 +170,84 @@ footer textarea {
   width: 100%;
   padding: 10px 20px;
   margin-bottom: 24px;
+}
+
+/* Rsponsive style */
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .skills-container {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .section-description {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .padding-p {
+    padding: 0;
+  }
+  .resume-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  footer {
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+  .footer-column {
+    width: 100%;
+    text-align: center;
+  }
+  footer [type="text"],
+  footer [type="email"],
+  footer textarea {
+    width: calc(100% - 40px);
+  }
+  .about {
+    padding: 20px;
+  }
+  .about-items {
+    flex-direction: column;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    gap: 20px;
+    margin: 20px;
+  }
+  .header {
+    background-image: none;
+  }
+  .banner-profile-pic {
+    width: 100%;
+  }
+  nav {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+  .banner-greetings {
+    font-size: 25px;
+    margin-left: 3px;
+  }
+  .banner-title {
+    font-size: 55px;
+  }
+  .banner-description {
+    margin-bottom: 10px;
+  }
+  .btn-primary {
+    background: #fd6e0a;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+  }
 }
